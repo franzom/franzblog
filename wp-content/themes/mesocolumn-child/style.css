@@ -1,0 +1,169 @@
+/*
+Theme Name: Mesocolumn Child Theme
+Theme URI: http://www.dezzain.com/wordpress-themes/mesocolumn/
+Description: Child Theme for Mesocolumn
+Author: Richie KS
+Author URI: http://www.dezzain.com
+License: GNU General Public License
+License URI: http://www.opensource.org/licenses/gpl-license.php
+Tags: buddypress,white,two-columns,three-columns,right-sidebar,responsive-layout,flexible-header,editor-style,custom-menu,custom-header,custom-background,featured-images,full-width-template,theme-options,threaded-comments,translation-ready
+Template: mesocolumn
+*/
+
+
+footer .innerwrap , header .innerwrap, #bodywrap, .innerwrap-custom-header, #main-navigation .innerwrap {
+max-width: none;
+}
+
+/* Desktop 1440px - modern larger monitor ----------- */
+@media only screen and (min-width:1440px) and (max-width:1920px) {
+footer .innerwrap , header .innerwrap, #bodywrap, .innerwrap-custom-header, #main-navigation .innerwrap {
+margin: 0px auto;
+padding: 0px;
+/*max-width: 1440px;*/
+width:auto;
+}
+}
+
+
+
+
+#wrapper-main {
+    background-color: #f6f3f3;
+}
+
+/* header */
+#header-base {
+	background-color:  #3d3030;
+    width: 100%;
+}
+
+#header-wrapper {
+max-width: 1300px;
+margin: 0px auto;
+position: relative;
+height: 80px;
+}
+
+/* Poner al menu top y el titulo del sitio en el mismo espacio */
+#container {
+    position: relative;
+}
+#top-navigation {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+/* titulo site */
+
+#siteinfo {
+    margin-left: 30px;
+    padding: 0em 0px 15px 0px;
+}
+
+#siteinfo a {
+    color: #DBDBDB;
+}
+
+/* sombra menu top*/
+.effect-1:before,
+.effect-1:after {
+display: none;
+}
+
+/* menu top para la derecha */
+#menu-menu-navegacion {
+    float: right;
+    padding-right: 30px;
+}
+
+
+/* contenedor cuerpo */
+.container-wrap {
+    float: none;
+    max-width: 1300px;
+    margin: 0px auto;
+    width: auto;
+    padding: 1.5em;
+}
+
+/* contenedor footer sup */
+
+.ftop {
+    margin: 0px auto;
+    float: none;
+    max-width: 1300px; 
+}
+div.fbox {
+    padding: 0% 1%;
+}
+
+.ftop h3.widget-title {
+    border-bottom: 5px solid #1c6a81;
+}
+
+/* footer inferior */
+
+.footer-bottom {
+    background-color: #1c6a81;
+}
+
+
+.fbottom {
+    max-width: 1300px;
+    margin: 0px auto;
+    float: none;
+}
+.footer-left {
+    margin-left: 30px;
+	width: 47%;
+}
+.footer-right {
+    margin-right: 30px;
+	width: 47%;	
+}
+
+
+/* SIDEBAR */
+#right-sidebar {
+    width: 27%;
+    padding: 0px;
+    background-color: #EDEAEA;
+}
+
+.sidebar-inner {
+    padding: 0em 3em;
+}
+
+#right-sidebar h3.widget-title {
+    padding: 0% 0% 10px;
+    font-size: 1.25em;
+    margin: 0px 0px 0.5em;
+    float: left;
+    width: 100%;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #fff;
+}
+#imgProfile {
+    text-align: center;
+}
+
+
+
+/* Menu superior responsive ----------- */
+@media only screen and (min-width:300px) and (max-width:890px) {
+    #top-navigation {
+    position: relative;
+    }
+    #header-wrapper {
+    height: 115px;
+    }    
+
+    #siteinfo {
+    margin-left: 0px;
+}    
+}
+

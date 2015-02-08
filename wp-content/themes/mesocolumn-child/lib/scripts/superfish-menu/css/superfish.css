@@ -1,0 +1,24 @@
+
+/* agregar !important para que remplace el original en el parent theme */
+#top-navigation .sf-menu a {
+    text-transform: uppercase !important;
+}
+
+
+/* ultimo boton del menu top */
+#top-navigation .sf-menu li:last-child {
+   background: #dd3e48 none;
+   color: #fff;
+}
+#top-navigation .sf-menu li:last-child a:hover {
+   background-color: #db303b;
+}
+
+/* Menu de temas */
+#main-navigation .sf-menu a {
+	text-transform: uppercase !important;
+	font-size: 2em !important;
+	padding: 0.5em !important;
+}
+
+
