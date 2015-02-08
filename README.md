@@ -1,3 +1,3 @@
 # franzblog
 
-My child theme
+It is my child theme for my wordpress blog
