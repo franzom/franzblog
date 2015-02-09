@@ -32,6 +32,12 @@ width:auto;
     background-color: #f6f3f3;
 }
 
+
+#header-wrapper, .container-wrap, .fbottom {
+width: 92%;
+}
+
+
 /* header */
 #header-base {
 	background-color:  #3d3030;
@@ -42,7 +48,9 @@ width:auto;
 max-width: 1300px;
 margin: 0px auto;
 position: relative;
-height: 80px;
+min-height: 80px;
+padding: 0.75em 0em;
+
 }
 
 /* Poner al menu top y el titulo del sitio en el mismo espacio */
@@ -59,7 +67,6 @@ height: 80px;
 /* titulo site */
 
 #siteinfo {
-    margin-left: 30px;
     padding: 0em 0px 15px 0px;
 }
 
@@ -76,7 +83,6 @@ display: none;
 /* menu top para la derecha */
 #menu-menu-navegacion {
     float: right;
-    padding-right: 30px;
 }
 
 
@@ -85,7 +91,6 @@ display: none;
     float: none;
     max-width: 1300px;
     margin: 0px auto;
-    width: auto;
     padding: 1.5em;
 }
 
@@ -117,11 +122,9 @@ div.fbox {
     float: none;
 }
 .footer-left {
-    margin-left: 30px;
 	width: 47%;
 }
 .footer-right {
-    margin-right: 30px;
 	width: 47%;	
 }
 
@@ -154,16 +157,29 @@ div.fbox {
 
 
 /* Menu superior responsive ----------- */
-@media only screen and (min-width:300px) and (max-width:890px) {
+@media only screen and (min-width:280px) and (max-width:890px) {
     #top-navigation {
     position: relative;
     }
     #header-wrapper {
-    height: 115px;
+    min-height: 115px;
     }    
-
-    #siteinfo {
-    margin-left: 0px;
-}    
 }
 
+
+@media only screen and (min-width:280px) and (max-width:770px){/* ipad 780px */
+    #siteinfo {
+    margin-left: 0px;
+    }  
+
+    .container-wrap, .footer-top .ftop {
+    width: 92% !important;
+}
+
+    .footer-left {
+    margin-left: 0px;
+    }
+    div.fbox {
+    padding: 0% 0%;
+    }
+{    
