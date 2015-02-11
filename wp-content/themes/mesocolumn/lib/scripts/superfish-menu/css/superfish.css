@@ -112,7 +112,7 @@ ul.sf-menu li li li.sfHover ul {
 	padding: 0.75em 1.25em;  
 	text-transform: capitalize;
 	color: #FFF;
-	font-weight: bold !important;
+	font-weight: bold;
 	margin: 0px;
 	z-index: 9999;  
 }
@@ -125,7 +125,7 @@ ul.sf-menu li li li.sfHover ul {
 	padding: 0.75em 1em;
 	text-transform: capitalize;
 	color: #333;
-	font-weight: bold !important;
+	font-weight: bold;
 	margin: 0px;
 	border-bottom: 5px solid #52C0D4;
 }

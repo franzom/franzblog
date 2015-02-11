@@ -2,6 +2,8 @@
 /* agregar !important para que remplace el original en el parent theme */
 #top-navigation .sf-menu a {
     text-transform: uppercase !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
 }
 
 
@@ -19,6 +21,7 @@
 	text-transform: uppercase !important;
 	font-size: 2em !important;
 	padding: 0.5em !important;
+	font-weight: normal !important;
 }
 
 
