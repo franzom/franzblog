@@ -59,11 +59,17 @@ padding: 0em 0em;
 #siteinfo h1 {
     font-size: 32px;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 #siteinfo a {
     color: #DBDBDB;
 }
+
+.socialIcons {
+    display: inline-block;
+    margin-left: 20px !important;
+} 
 
 /* sombra menu top*/
 .effect-1:before,
