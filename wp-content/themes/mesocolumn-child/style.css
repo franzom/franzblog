@@ -28,6 +28,7 @@ width: 92%;
 #header-base {
 	background-color:  #3d3030;
     width: 100%;
+    overflow: hidden;
 }
 
 #header-wrapper {
@@ -53,22 +54,47 @@ padding: 0em 0em;
 /* titulo site */
 
 #siteinfo {
-    padding: 0em 0px 15px 0px;
+    padding: 0px;
+    text-align: left;
+    margin: 5px 0px 12px 0px; 
 }
 
-#siteinfo h1 {
+#siteinfo h1, #siteinfo div {
     font-size: 32px;
     text-transform: uppercase;
     display: inline-block;
+    margin: 8px 0px 0px;
 }
 
 #siteinfo a {
     color: #DBDBDB;
 }
 
+p#site-description {
+    color: white;
+    opacity: 0.7;
+}
+
 .socialIcons {
     display: inline-block;
     margin-left: 20px !important;
+} 
+
+.socialIcons ul {
+   list-style: none;
+   margin: 0px; 
+} 
+.socialIcons ul li {
+   display: inline; 
+} 
+.socialIcons ul li a img {
+    height: 26px !important;
+    margin: 0px 3px !important;
+    opacity: 0.7;
+} 
+
+.socialIcons ul li a:hover img{
+    opacity: 1;
 } 
 
 /* sombra menu top*/
@@ -148,6 +174,7 @@ div.fbox {
     width: 27%;
     padding: 0px;
     background-color: #EDEAEA;
+    border-radius: 5px;
 }
 
 .sidebar-inner {
@@ -176,16 +203,42 @@ div.fbox {
     /* position: relative; */ /*sube el menu a un nivel superior */
     }
     #header-wrapper {
-    min-height: 115px;
+    /*min-height: 115px;*/
     }    
 }
 
+/*////////////////////////////////////////////////////////
+ MEDIAQUERIES
+//////////////////////////////////////////////////////////*/
+
+/* Desktop 1440px - modern larger monitor ----------- */
+@media only screen and (min-width:1440px) and (max-width:1920px) {
+footer .innerwrap , header .innerwrap, #bodywrap, .innerwrap-custom-header, #main-navigation .innerwrap {
+margin: 0px auto;
+padding: 0px;
+/*max-width: 1440px;*/
+width:auto;
+}
+}    
 
 @media only screen and (min-width:280px) and (max-width:770px){/* ipad 780px */
+
     #siteinfo {
-    margin-left: 0px;
-    text-align: left;
-    }  
+        /*margin: 0;*/
+        float: left;
+        padding: 0% !important;
+        overflow:hidden;
+    }   
+
+    #siteinfo h1, #siteinfo div {
+        width: auto;
+        margin: 8px 0px 0px;
+    }
+
+    .socialIcons {
+        float: left;
+        margin-top: 12px !important;
+    }
 
     .container-wrap, .footer-top .ftop {
     width: 92% !important;
@@ -201,14 +254,19 @@ div.fbox {
     }    
 }
 
-/* Desktop 1440px - modern larger monitor ----------- */
-@media only screen and (min-width:1440px) and (max-width:1920px) {
-footer .innerwrap , header .innerwrap, #bodywrap, .innerwrap-custom-header, #main-navigation .innerwrap {
-margin: 0px auto;
-padding: 0px;
-/*max-width: 1440px;*/
-width:auto;
+@media only screen and (min-width:280px) and (max-width:440px){ /* Donde se rompe el menu superior */
+
+    #header-base {
+        /*min-height: 104px;*/
+    }
+
+    .socialIcons {
+        margin: 5px 0px !important;
+        width: 100% !important;
+    }
+    p#site-description {
+    padding: 0px;
+    /*margin-bottom: 5px;*/
 }
-}    
 
-
+}

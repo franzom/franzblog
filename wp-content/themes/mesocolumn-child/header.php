@@ -112,9 +112,17 @@ if( $get_header_logo  ) { ?>
 <<?php if( !is_singular() || is_page_template('page-templates/template-blog.php') ){ echo 'h1 '; } else { echo 'div '; } ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo bloginfo('name'); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><<?php if( !is_singular() || is_page_template('page-templates/template-blog.php') ){ echo '/h1 '; } else { echo '/div '; } ?>>
 <!-- AGREGADO BOTONES REDES SOCIALES -->
 <div class="socialIcons">
-	<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb-r.png"></a>
-	<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tw-r.png"></a>
-	<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/in-r.png"></a>
+	<ul> 
+		<li>
+			<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tw-r.png"></a>
+		</li>	
+		<li>
+			<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/in-r.png"></a>
+		</li>	
+		<li>
+			<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb-r.png"></a>
+		</li>
+	</ul>
 </div>
 <p id="site-description"><?php echo bloginfo('description'); ?></p>
 <?php } ?>
