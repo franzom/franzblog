@@ -14,10 +14,10 @@
 $config = array( 
     
     
-    'current_version' => 2.2,
+    'current_version' => 2.3,
     
     
-    'is_beta' => false,
+    'is_beta' => true,
     
     
     'plugins_dir' => plugin_dir_path( __FILE__ ),
@@ -277,6 +277,22 @@ $defaults = array(
     
     'RMArImgI' => false,
     
+    
+    /* Added in 2.3 */
+    
+    'RMTrigger' => '#click-menu',
+ 
+    
+    'RMPushBtn' => false,
+    
+    
+    'RMCurBkgHov' => '#43494C',
+    
+    
+    'RMCurColHov' => '#FFFFFF',
+    
+    
+    'RMWalker' => null,
     
 );
 
