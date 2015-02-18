@@ -16,25 +16,21 @@ Template Name: Sitemap
  <!-- POST ENTRY START -->
 
 <div id="post-entry">
-<div class="post-entry-inner">
-<?php do_action( 'bp_before_blog_entry' ); ?>
+<section class="post-entry-inner">
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
-<?php do_action( 'bp_before_blog_post' ); ?>
-
 <article <?php post_class('post-single page-single'); ?> id="post-<?php the_ID(); ?>">
 
-<h1 class="post-title entry-title"><?php the_title(); ?></h1>
-<?php get_template_part( 'lib/templates/post-meta' ); ?>
+<h1 class="post-title"><?php the_title(); ?></h1>
 
-<?php do_action( 'bp_before_post_content' ); ?>
-<div class="post-content entry-content">
+<div class="post-content">
 <?php the_content(); ?>
-<h4><?php _e('Archives by Month:', 'mesocolumn'); ?></h4>
+
+<h4><?php _e('Archives by Month:', TEMPLATE_DOMAIN); ?></h4>
 <ul class="the-icons"><?php wp_get_archives('before=<i class="fa fa-table"></i>&type=monthly&limit=12&show_post_count=1'); ?></ul>
-<h4><?php _e('Archives by Category:', 'mesocolumn'); ?></h4>
+<h4><?php _e('Archives by Category:', TEMPLATE_DOMAIN); ?></h4>
 <ul class="the-icons">
 <?php
   $categories = get_categories();
@@ -43,14 +39,12 @@ Template Name: Sitemap
   }
 ?>
 </ul>
-<h4><?php _e('Browse Last 50 Posts:', 'mesocolumn'); ?></h4>
+<h4><?php _e('Browse Last 50 Posts:', TEMPLATE_DOMAIN); ?></h4>
 <ul class="the-icons"><?php wp_get_archives('before=<i class="fa fa-bookmark"></i>&type=postbypost&limit=50'); ?> </ul>
+
 </div>
-<?php do_action( 'bp_after_post_content' ); ?>
 
 </article>
-
-<?php do_action( 'bp_after_blog_post' ); ?>
 
 <?php endwhile; ?>
 
@@ -60,8 +54,7 @@ Template Name: Sitemap
 
 <?php endif; ?>
 
-<?php do_action( 'bp_after_blog_entry' ); ?>
-</div>
+</section>
 </div>
 <!-- POST ENTRY END -->
 

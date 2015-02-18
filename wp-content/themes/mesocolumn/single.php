@@ -9,20 +9,15 @@
 
 <!-- POST ENTRY START -->
 <div id="post-entry">
-
-<div class="post-entry-inner">
-
-<?php do_action( 'bp_before_blog_entry' ); ?>
+<section class="post-entry-inner">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php do_action( 'bp_before_blog_post' ); ?>
-
 <!-- POST START -->
-<article <?php post_class('post-single'); ?> id="post-<?php the_ID(); ?>" <?php do_action('bp_article_start'); ?>>
+<article <?php post_class('post-single'); ?> id="post-<?php the_ID(); ?>">
 
 <div class="post-top">
-<h1 class="post-title entry-title" <?php do_action('bp_article_post_title'); ?>><?php the_title(); ?></h1>
+<h1 class="post-title entry-title"><?php the_title(); ?></h1>
 <?php get_template_part( 'lib/templates/post-meta' ); ?>
 </div>
 
@@ -34,9 +29,7 @@
 <div class="adsense-single"><?php echo stripcslashes(do_shortcode($get_ads_single_top)); ?></div>
 <?php } ?>
 
-<div class="entry-content" <?php do_action('bp_article_post_content'); ?>>
-<?php the_content( __('...more &raquo;','mesocolumn') ); ?>
-</div>
+<div class="entry-content"><?php the_content( __('...more &raquo;',TEMPLATE_DOMAIN) ); ?></div>
 <?php wp_link_pages('before=<div id="page-links">&after=</div>'); ?>
 
 <?php $get_ads_single_bottom = get_theme_option('ads_single_bottom'); if($get_ads_single_bottom != '') { ?>
@@ -62,8 +55,6 @@ endif
 </article>
 <!-- POST END -->
 
-<?php do_action( 'bp_after_blog_post' ); ?>
-
 <?php if( function_exists('dez_set_wp_post_view') ){ dez_set_wp_post_view( get_the_ID() ); } ?>
 
 <?php endwhile; ?>
@@ -84,8 +75,7 @@ endif
 
 <?php get_template_part( 'lib/templates/paginate' ); ?>
 
-<?php do_action( 'bp_after_blog_entry' ); ?>
-</div>
+</section>
 </div>
 <!-- POST ENTRY END -->
 
