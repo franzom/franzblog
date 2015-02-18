@@ -294,10 +294,6 @@ $defaults = array(
     
     'RMWalker' => null,
     
-    /* Added in 2.4 */
-    
-    'RMUseTran' => null,
-    
 );
 
 
