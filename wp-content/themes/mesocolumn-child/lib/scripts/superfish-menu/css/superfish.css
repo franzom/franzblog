@@ -9,11 +9,11 @@
 
 /* ultimo boton del menu top */
 #top-navigation .sf-menu li:last-child {
-   background: #dd3e48 none;
+   background: #EF3E38 none;
    color: #fff;
 }
 #top-navigation .sf-menu li:last-child a:hover {
-   background-color: #db303b;
+   background-color: #ED2D26;
 }
 
 /* Menu de temas */

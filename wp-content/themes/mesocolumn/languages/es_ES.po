@@ -155,7 +155,7 @@ msgstr ""
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/buddypress/bp-searchform.php:9
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/buddypress/bp-widgets-functions.php:27
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/sidebar.php:53
 msgid "Recent Posts"
@@ -1208,7 +1208,7 @@ msgstr ""
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/sliders/jd-gallery-slider.php:36
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/sliders/jd-gallery-slider.php:76
 msgid "Continue reading "
-msgstr ""
+msgstr "Sigue leyendo"
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/advertisement.php:13
 msgid "Advertisement"
@@ -1362,7 +1362,7 @@ msgstr ""
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:1
 msgid "No Result Found!"
-msgstr ""
+msgstr "Nada por aquí aun..."
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:3
 msgid ""
@@ -1410,7 +1410,7 @@ msgstr ""
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/page-templates/template-blog-full-content.php:37
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/page-templates/template-full-width.php:27
 msgid "...Continue reading"
-msgstr ""
+msgstr "Sigue leyendo"
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/page-templates/template-blogroll.php:26
 msgid "Useful Resources:"

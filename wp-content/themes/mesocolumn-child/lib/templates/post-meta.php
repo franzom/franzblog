@@ -1,6 +1,11 @@
 <div class="post-meta the-icons pmeta-alt<?php if( is_page() ) { echo ' meta-no-display'; } ?>">
+
+<!-- MOD-FRANZOM retiro  autor en post 
+
 <span class="post-author vcard"><i class="fa fa-user"></i><?php the_author_posts_link(); ?></span>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+-->
 
 <?php
 $getmodtime = get_the_modified_time(); if( !$getmodtime ) {
@@ -25,7 +30,10 @@ $modtime = '<span class="date updated meta-no-display">'. get_the_modified_time(
 <?php endif; ?>
 <?php if ( comments_open() ) { ?>
 <?php if( !is_tax() ) { ?>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="post-comment"><i class="fa fa-comment"></i><?php comments_popup_link(__('No Comment',TEMPLATE_DOMAIN), __('1 Comment',TEMPLATE_DOMAIN), __('% Comments',TEMPLATE_DOMAIN) ); ?></span>
+<!-- MOD-FRANZOM retiro contador de comentarios en post 
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="post-comment"><i class="fa fa-comment"></i><?php comments_popup_link(__('No Comment',TEMPLATE_DOMAIN), __('1 Comment',TEMPLATE_DOMAIN), __('% Comments',TEMPLATE_DOMAIN) ); ?></span>
+-->
 <?php } ?>
 <?php } ?>
 </div>

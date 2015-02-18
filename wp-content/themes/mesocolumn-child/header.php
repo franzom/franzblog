@@ -110,7 +110,7 @@ if( $get_header_logo  ) { ?>
 </span>
 <?php } else { ?>
 <<?php if( !is_singular() || is_page_template('page-templates/template-blog.php') ){ echo 'h1 '; } else { echo 'div '; } ?>><a href="<?php echo home_url( '/' ); ?>" title="<?php echo bloginfo('name'); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><<?php if( !is_singular() || is_page_template('page-templates/template-blog.php') ){ echo '/h1 '; } else { echo '/div '; } ?>>
-<!-- AGREGADO BOTONES REDES SOCIALES -->
+<!-- MOD-FRANZOM AGREGADO BOTONES REDES SOCIALES -->
 <div class="socialIcons">
 	<ul> 
 		<li>
@@ -146,7 +146,7 @@ if( $get_header_logo  ) { ?>
 <?php do_action( 'bp_after_header' ); ?>
 </div>
 </div>
-<!-- HEADER-BASE agregado END -->
+<!-- MOD-FRANZOM HEADER-BASE agregado END -->
 
 <?php do_action( 'bp_before_container_wrap' ); ?>
 <div class="container-wrap">
