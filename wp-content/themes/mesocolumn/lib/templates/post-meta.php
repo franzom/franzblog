@@ -16,7 +16,7 @@ $modtime = '<span class="date updated meta-no-display">'. get_the_modified_time(
 <?php if(get_post_type() != 'post' && get_post_type() != 'page'): ?>
 <?php else: ?>
 <?php if( is_tax() ) { ?>
-<?php echo the_taxonomies('before=<span class="post-category"><i class="fa fa-file"></i>&after=</span>'); ?>
+&nbsp;&nbsp;&nbsp;&nbsp;<?php echo the_taxonomies('before=<span class="post-category"><i class="fa fa-file"></i>&after=</span>'); ?>
 <?php } else { ?>
 <?php if( get_post_type() != 'page') { ?>
 &nbsp;&nbsp;&nbsp;&nbsp;<span class="post-category"><i class="fa fa-file"></i><?php if( is_singular() ) { echo the_category(', '); } else { echo dez_get_singular_cat(); } ?></span>

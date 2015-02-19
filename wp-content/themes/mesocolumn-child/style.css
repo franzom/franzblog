@@ -30,9 +30,12 @@ h2.header-title {
     text-transform: none;
 }    
 
+a:link, a:visited {
+    color: #1C6A81;
+}
 
 
-/* header */
+/* HEADER */
 #header-base {
 	background-color:  #3d3030;
     width: 100%;
@@ -40,17 +43,18 @@ h2.header-title {
 }
 
 #header-wrapper {
-max-width: 1300px;
-margin: 0px auto;
-position: relative;
-min-height: 80px;
-padding: 0em 0em;
+    max-width: 1300px;
+    margin: 0px auto;
+    position: relative;
+    min-height: 80px;
+    padding: 0em 0em;
 
 }
 
 /* Poner al menu top y el titulo del sitio en el mismo espacio */
 #container {
     position: relative;
+    margin-bottom: 2em; 
 }
 #top-navigation {
     position: absolute;
@@ -59,7 +63,7 @@ padding: 0em 0em;
 }
 
 
-/* titulo site */
+/* TITULO site */
 
 #siteinfo {
     padding: 0px;
@@ -74,6 +78,7 @@ padding: 0em 0em;
     margin: 8px 0px 0px;
     font-family: 'Kreon', serif;
     letter-spacing: 0px;
+    float: left; /* arregla un descuadre en Chrome*/ 
 }
 
 #siteinfo a, h1 a {
@@ -100,15 +105,15 @@ padding: 0em 0em;
 p#site-description {
     color: #E3E3E3;
     opacity: 0.7;
+    float: left; /* + width 100% pasa la linea abajo*/
+    width: 100%;
 }
 
 p#site-description:after {
     content: "}";
     margin-left: 0.5em;
-    opacity: 0.7;
-    
+    opacity: 0.5;
 }
-
 
 .socialIcons {
     display: inline-block;
@@ -129,7 +134,7 @@ p#site-description:after {
 } 
 /* Quita el corchete a los iconos porque les cae por #siteinfo a */
 .socialIcons ul li a:after, ul li a:before {
-    content: "" !important;
+    content: none !important;
 }
 
 .socialIcons ul li a:hover img{
@@ -148,7 +153,7 @@ display: none;
 }
 
 
-/* contenedor cuerpo */
+/* CONTENEDOR cuerpo */
 .container-wrap {
     float: none;
     max-width: 1300px;
@@ -158,7 +163,7 @@ display: none;
 
 /* Menu categorias */
 #main-navigation {
-    padding: 1em 0em;
+    padding: 1.5em 0em;
     background: transparent;
 }
 
@@ -167,7 +172,9 @@ display: none;
 /* POSTS */
 /* autor de post retirado en post-meta.php */
 
-
+#post-entry article .post-meta a:hover {
+    color: #1C6A81;
+}
 
 /* contenedor footer sup */
 
@@ -196,6 +203,16 @@ div.fbox {
     margin: 0px auto;
     float: none;
 }
+
+.fbottom a {
+    opacity: 0.5;
+    font-family: Oswald;
+}
+
+.fbottom a:hover {
+    opacity: 0.8;
+}
+
 .footer-left {
     display: none;
 	width: 47%;
@@ -221,6 +238,7 @@ div.fbox {
 
 /* SIDEBAR */
 #right-sidebar {
+    min-width: 250px;
     width: 27%;
     padding: 0px;
     background-color: #E3E3E3;
@@ -245,21 +263,15 @@ div.fbox {
     text-align: center;
 }
 
-
-
-/* Menu superior responsive ----------- */
-@media only screen and (min-width:280px) and (max-width:890px) {
-    #top-navigation {
-    /* position: relative; */ /*sube el menu a un nivel superior */
-    }
-    #header-wrapper {
-    /*min-height: 115px;*/
-    }    
+ #twitter-widget-0 {
+    width:100% !important;
 }
+
 
 /*////////////////////////////////////////////////////////
  MEDIAQUERIES
 //////////////////////////////////////////////////////////*/
+
 
 /* Desktop 1440px - modern larger monitor ----------- */
 @media only screen and (min-width:1440px) and (max-width:1920px) {
@@ -271,7 +283,27 @@ width:auto;
 }
 }    
 
-@media only screen and (min-width:280px) and (max-width:770px){/* ipad 780px */
+/*MENU SUPERIOR Y SIDEBAR RESPONSIVE ----------- */
+@media only screen and (min-width:770px) and (max-width:890px) {
+    #top-navigation {
+    /* position: relative; */ /*sube el menu a un nivel superior */
+    }   
+
+    /* lo siguiente reduce el ancho del sidebar y aumenta el del content para que encajen*/
+    .content {
+    width: 66%;
+    }
+    #right-sidebar {
+    min-width: 240px;
+    padding-top: 2em !important;
+    }
+    .sidebar-inner {
+    padding: 0em 2em;
+    }
+}
+
+/* ipad 780px */
+@media only screen and (min-width:280px) and (max-width:770px){
 
     #siteinfo {
         /*margin: 0;*/
@@ -302,7 +334,8 @@ width:auto;
     }    
 }
 
-@media only screen and (min-width:600px) and (max-width:770px){ /* Menu de temas aún visible */
+/* Menu de temas aún visible */
+@media only screen and (min-width:600px) and (max-width:770px){ 
     /*
     #main-navigation .sf-menu {
         display: block;
@@ -310,7 +343,8 @@ width:auto;
     */
 }    
 
-@media only screen and (min-width:280px) and (max-width:440px){ /* Donde se rompe el menu superior */
+/* Donde se rompe el menu superior */
+@media only screen and (min-width:280px) and (max-width:440px){ 
 
     .socialIcons {
         margin: 5px 0px !important;
@@ -321,3 +355,6 @@ width:auto;
 
     }
 }
+
+
+

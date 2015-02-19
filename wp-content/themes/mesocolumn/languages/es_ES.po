@@ -50,7 +50,7 @@ msgstr ""
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/comments.php:7
 msgid "No Comments Yet"
-msgstr ""
+msgstr "Sin comentarios"
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/comments.php:7
 msgid "1 Comment Already"
