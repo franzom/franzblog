@@ -114,13 +114,16 @@ if( $get_header_logo  ) { ?>
 <div class="socialIcons">
 	<ul> 
 		<li>
-			<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tw-r.png"></a>
+			<a href="http://www.twitter.com/franzomX" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tw-r.png"></a>
 		</li>	
 		<li>
-			<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/in-r.png"></a>
+			<a href="http://fr.linkedin.com/in/franzomarvasquez" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/in-r.png"></a>
 		</li>	
 		<li>
 			<a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/fb-r.png"></a>
+		</li>		
+		<li>
+			<a href="http://www.pinterest.com/franzom" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pin-r.png"></a>
 		</li>
 	</ul>
 </div>

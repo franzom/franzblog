@@ -39,7 +39,7 @@ msgstr ""
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/404.php:18
 msgid "The page no longer exist"
-msgstr ""
+msgstr "Esta página no existe"
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/404.php:20
 #, php-format
@@ -196,7 +196,7 @@ msgstr ""
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/buddypress/bp-searchform.php:4
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/functions/theme-functions.php:8
 msgid "Search for:"
-msgstr ""
+msgstr "Buscar:"
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/buddypress/bp-widgets-functions.php:13
 msgid "Displays your BuddyPress Directory Search."
@@ -1362,14 +1362,14 @@ msgstr ""
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:1
 msgid "No Result Found!"
-msgstr "Nada por aquí aun..."
+msgstr "Muy pronto..."
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:3
 msgid ""
 "Sorry, we can't find the category you're looking for at this URL. Please try "
 "selecting a menu item from above or to the side of this message to get where "
 "you'd like to go."
-msgstr ""
+msgstr "Ya se me ocurrirá algo."
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:5
 msgid ""

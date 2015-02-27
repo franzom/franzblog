@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Responsive Menu\n"
 "POT-Creation-Date: 2015-02-18 13:02-0000\n"
-"PO-Revision-Date: 2015-02-18 13:02-0000\n"
+"PO-Revision-Date: 2015-02-21 21:51+0100\n"
 "Last-Translator: Peter Featherstone <hello@peterfeatherstone.com>\n"
 "Language-Team: Peter Featherstone <hello@peterfeatherstone.com>\n"
 "Language: es\n"
@@ -455,7 +455,6 @@ msgid "Search Box Positioning"
 msgstr "Remover el Campo de Búsqueda"
 
 #: app/views/admin/page.phtml:787
-#, fuzzy
 msgid "Select where you would like the search box to appear"
 msgstr "Marque si desea remover el campo de búsqueda"
 

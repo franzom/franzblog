@@ -11,7 +11,7 @@ Template: mesocolumn
 */
 
 /* Google fonts  importadas */
-@import url(http://fonts.googleapis.com/css?family=Maiden+Orange);
+/*@import url(http://fonts.googleapis.com/css?family=Maiden+Orange);*/
 @import url(http://fonts.googleapis.com/css?family=Kreon:400,300);
 
 footer .innerwrap , header .innerwrap, #bodywrap, .innerwrap-custom-header, #main-navigation .innerwrap {
@@ -40,6 +40,10 @@ a:link, a:visited {
 	background-color:  #3d3030;
     width: 100%;
     overflow: hidden;
+    background-image: url(images/tie.jpg);
+    background-size: 456px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #header-wrapper {
@@ -60,6 +64,7 @@ a:link, a:visited {
     position: absolute;
     top: 0px;
     right: 0px;
+    background-color: transparent;
 }
 
 
@@ -112,7 +117,7 @@ p#site-description {
 p#site-description:after {
     content: "}";
     margin-left: 0.5em;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .socialIcons {
@@ -166,7 +171,9 @@ display: none;
     padding: 1.5em 0em;
     background: transparent;
 }
-
+#main-navigation .sf-menu a {
+    color: #3D3030;
+}
 
 
 /* POSTS */
@@ -176,8 +183,16 @@ display: none;
     color: #1C6A81;
 }
 
-/* contenedor footer sup */
+#post-entry article h1.post-title a, #post-entry article h2.post-title a {
+    color: #3D3030;
+}    
 
+#post-entry article h1.post-title a, #post-entry article h2.post-title a:hover {
+    color: #3D3030;
+}    
+
+
+/* contenedor footer sup */
 .ftop {
     margin: 0px auto;
     float: none;
@@ -263,6 +278,16 @@ div.fbox {
     text-align: center;
 }
 
+#right-sidebar aside li a, #right-sidebar aside div a {
+    color: #EF3E38;
+    font-style: italic;
+}
+
+#right-sidebar aside li a:hover, #right-sidebar aside div a:hover {
+    color: #EF3E38;
+    text-decoration: underline;
+}
+
  #twitter-widget-0 {
     width:100% !important;
 }
@@ -291,8 +316,22 @@ width:auto;
 
     /* lo siguiente reduce el ancho del sidebar y aumenta el del content para que encajen*/
     .content {
-    width: 66%;
+    width: 65%;
     }
+
+    .content, #right-sidebar {
+    padding-top: 0em !important;
+    }   
+
+    /* imagen del post */
+    #post-entry div.post-thumb.in-archive { 
+    width: 100%;
+    }
+
+    #post-entry article .post-right {
+    margin: 0px;    
+    }    
+
     #right-sidebar {
     min-width: 240px;
     padding-top: 2em !important;
@@ -304,6 +343,10 @@ width:auto;
 
 /* ipad 780px */
 @media only screen and (min-width:280px) and (max-width:770px){
+
+    #header-base {
+        background-position: right;
+    }
 
     #siteinfo {
         /*margin: 0;*/
@@ -346,6 +389,9 @@ width:auto;
 /* Donde se rompe el menu superior */
 @media only screen and (min-width:280px) and (max-width:440px){ 
 
+    #header-base {
+        background-position: -10px center;
+    }
     .socialIcons {
         margin: 5px 0px !important;
         width: 100% !important;
