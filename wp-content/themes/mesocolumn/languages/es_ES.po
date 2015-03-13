@@ -1362,14 +1362,14 @@ msgstr ""
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:1
 msgid "No Result Found!"
-msgstr "Muy pronto..."
+msgstr "Muy pronto."
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:3
 msgid ""
 "Sorry, we can't find the category you're looking for at this URL. Please try "
 "selecting a menu item from above or to the side of this message to get where "
 "you'd like to go."
-msgstr "Ya se me ocurrirá algo."
+msgstr "Neuronas carburando..."
 
 #: C:\xampp\htdocs\dezzain\demo\wp-content\themes\mesocolumn/lib/templates/result.php:5
 msgid ""

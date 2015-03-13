@@ -5,6 +5,7 @@
 <!--[if IE 9 ]>		<html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html <?php language_attributes(); ?> class="no-js"> <!--<![endif]-->
+
 <head>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -39,6 +40,17 @@ if( $get_fav_icon ) { ?><link rel="icon" href="<?php echo $get_fav_icon; ?>" typ
 
 <?php wp_head(); ?>
 
+<!-- MOD-FRANZOM CODE ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60310123-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 </head>
 
 <body <?php body_class(); ?> id="custom">
@@ -61,7 +73,7 @@ if( $get_fav_icon ) { ?><link rel="icon" href="<?php echo $get_fav_icon; ?>" typ
 <!-- CONTAINER START -->
 <section id="container">
 
-<!-- HEADER-BASE agregado START -->
+<!-- MOD-FRANZOM HEADER-BASE agregado START -->
 <div id="header-base"><div id="header-wrapper">	
 
 <?php do_action( 'bp_before_top_nav' ); ?>
@@ -72,7 +84,7 @@ if( $get_fav_icon ) { ?><link rel="icon" href="<?php echo $get_fav_icon; ?>" typ
 
 <?php do_action( 'bp_inside_top_nav' ); ?>
 
-<!-- QUITO EL ANTIGUO MENU DE NAVEGACION 
+<!-- MOD-FRANZOM QUITO EL ANTIGUO MENU DE NAVEGACION 
 <div id="mobile-nav">
 <?php if ( has_nav_menu( 'top' ) ) {  ?>
 <p class="select-pri">

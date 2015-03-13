@@ -211,7 +211,8 @@ endif;
 
 wp_enqueue_style( 'superfish', get_template_directory_uri(). '/lib/scripts/superfish-menu/css/superfish.css', array(), $theme_version );
 
-wp_enqueue_style( 'tabber', get_template_directory_uri() . '/lib/scripts/tabber/tabber.css', array(), $theme_version );
+/* MOD-FRANZOM QUITO EL CSS DE TABBER (widget que pone pestañas en el sidebar )
+ wp_enqueue_style( 'tabber', get_template_directory_uri() . '/lib/scripts/tabber/tabber.css', array(), $theme_version ); */
 
 if ( ( is_home() || is_front_page() || is_page_template('page-templates/template-blog.php') ) && get_theme_option('slider_on') == 'Enable'  ) {
 wp_enqueue_style( 'jd-gallery-css', get_template_directory_uri(). '/lib/scripts/jd-gallery/jd.gallery.css', array(), $theme_version );
